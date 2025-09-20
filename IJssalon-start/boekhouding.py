@@ -18,7 +18,7 @@ with open('boekhouding.csv', 'w', newline='') as csvfile:
     for key, value in producten.items():
         writer = csv.writer(csvfile, delimiter=';')
         writer.writerow([key,value])
-        
-print(totaal_inkomsten)
+
+
 presenteer(producten, totaal_inkomsten)
 
